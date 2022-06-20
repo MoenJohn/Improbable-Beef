@@ -1,0 +1,21 @@
+body {
+    /* background: linear-gradient(to bottom, #a4fafa 0%, #ffffcc 100%); */
+    background: #bebec1;
+}
+
+.jumbotron{
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: #dedee4;
+}
+
+.bubble-row {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.color1 {color: #e31742;}
+.color2 {color: #e36315;}
+.color3 {color: #e3a615;}
+.color4 {color: #dbdc6c;}
+.color5 {color: #d1efb8;}
