@@ -98,7 +98,7 @@ function buildCharts(sample) {
         name: "Top Bacteria",
         orientation: "h",
         marker: {
-          color: "dodgerblue"
+          color: "#b4ce43"
         },
         type: "bar"
       };
@@ -173,7 +173,34 @@ function buildCharts(sample) {
     var bubbleData = [trace2];
 
     // // 2. Create the layout for the bubble chart.
-    var bubbleLayout = {title: "Bacteria Cultures Per Sample"};
+    var bubbleLayout = {
+      title: "<b>Bacteria Cultures Per Sample</b>",
+      font :{
+        family: "monospace",
+        size: 18
+      }
+    ,
+    yaxis: {
+      title: {
+        text: 'Strain Population',
+        font: {
+          family: 'monospace',
+          size: 18,
+          color: '#7f7f7f',
+        },
+        yref:0.5,
+        y:0
+      },
+    },
+    xaxis: {
+      title: {
+        automargin:true,
+        text: 'Bacterial Strain',
+        font: {
+          family: 'monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }}}};
 
     // // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
@@ -190,7 +217,7 @@ function buildCharts(sample) {
     var trace3 = {
       domain: { x: [0, 1], y:[0, 1] },
       value: wfreq,
-      title: {text: "Washing Frequency"},
+      title: {text: "Washing Frequency", font:{family: "monospace"}},
       type: "indicator",
       mode: "gauge+number",
       delta: { reference: 5 },
@@ -214,8 +241,13 @@ function buildCharts(sample) {
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
       title: {
-        text: "Belly Button Washing Frequency",
-      }
+        text: "<b>Belly Button Washing Frequency</b>",
+        font: {
+          family: 'monospace',
+          size: 24
+        }
+      },
+      
     };
 
     

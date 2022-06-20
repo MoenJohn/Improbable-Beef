@@ -1,12 +1,19 @@
 body {
-    /* background: linear-gradient(to bottom, #a4fafa 0%, #ffffcc 100%); */
-    background: #bebec1;
+    background: linear-gradient(to bottom, #CBCBD4 0%, #ffffcc 100%);
+    /* background: #bebec1; */
 }
+
+h1, p {
+    font-family: "monospace";
+    /* color: #FFFFFF */
+}
+
 
 .jumbotron{
     margin-top: 20px;
     border-radius: 25px;
-    background-color: #dedee4;
+    background-color: #fdfad3;
+    /* background-color: #b4ce43 */
 }
 
 .bubble-row {
